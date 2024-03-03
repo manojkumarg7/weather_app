@@ -23,9 +23,11 @@ header {
   padding: 10px 25px;
   font-size: 18px;
   border-radius: 20px;
+  caret-color: red;
 }
 
 .search-icon {
+  position: relative;
   height: 50px;
   width: 50px;
   border: 1px solid black;
@@ -36,4 +38,72 @@ header {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+}
+.tootlip {
+  visibility: hidden;
+  color: black;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 60px 0px 0px 0px;
+}
+.search-icon:hover .tootlip {
+  visibility: visible;
+}
+.weather {
+  text-align: center;
+  color: white;
+}
+.weather_image {
+  height: 190px;
+  width: 190px;
+}
+
+.celcius {
+  font-size: 5rem;
+}
+.city {
+  font-size: 3.125rem;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+}
+.col img {
+  width: 50px;
+  height: 50px;
+}
+.humidity,
+.wind {
+  font-size: 30px;
+}
+.repo {
+  font-size: 20px;
+}
+@media (max-width: 576px) {
+  .col img {
+    width: 35px;
+    height: 35px;
+  }
+  .humidity,
+  .wind {
+    font-size: 20px;
+  }
+  .repo {
+    font-size: 15px;
+  }
+  .details {
+    margin-top: 40px;
+  }
 }
