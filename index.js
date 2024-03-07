@@ -21,7 +21,7 @@ async function checkWeather(city) {
   } else if (data.weather[0].main == "Rain") {
     weather_image.src = "images/rain.png";
   } else if (data.weather[0].main == "Clear") {
-    weather_image.src = "images/Clear.png";
+    weather_image.src = "images/clear.png";
   } else if (data.weather[0].main == "Drizzle") {
     weather_image.src = "images/drizzle.png";
   } else if (data.weather[0].main == "Mist") {
