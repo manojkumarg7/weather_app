@@ -21,15 +21,23 @@
         name="city_names"
         spellcheck="false"
       />
+
       <div class="search-icon">
         <i class="fa-solid fa-magnifying-glass"></i>
         <span class="tootlip">Search</span>
       </div>
     </header>
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
     <!-- main section -->
-    <main>
+    <main class="weather_wrapper">
       <div class="weather">
-        <img class="weather_image" src="./images/clear.png" alt="" />
+        <img
+          class="weather_image"
+          src="./images/clear.png"
+          alt="not loaded image"
+        />
 
         <h1 class="celcius">22°c</h1>
         <h1 class="city">Bengaluru</h1>
@@ -45,7 +53,7 @@
           <div class="col">
             <img src="./images/wind.png" alt="" />
             <div>
-              <p class="wind">15 </p>
+              <p class="wind">15</p>
               <p class="repo">wind speed</p>
             </div>
           </div>
